@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Interior Dekho</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f1e7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #8d6e63;
+            font-weight: bold;
+        }
+
+        .rightNav {
+            display: flex;
+        }
+
+        .rightNav input {
+            padding: 5px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .rightNav button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: brown;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .rightNav button:hover {
+            background-color: #8d6e63;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .section-left {
+            background-color: #f8f1e7;
+        }
+
+        .paras {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sectionTag {
+            font-size: 2rem;
+            color: #8d6e63;
+        }
+
+        .sectionSubTag {
+            font-size: 1rem;
+            color: #6d4c41;
+            margin: 20px 0;
+        }
+
+        .thumbnil, .thumbnil-first {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imgFluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .image-block {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+        }
+
+        .image-block:hover {
+            transform: scale(1.05);
+        }
+
+        .image-block img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-block {
+                width: 80%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <!-- <div class="logo"><img src="" alt="logo"></div> -->
+            <li><a href="frontpagemain.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="upload.html">Upload</a>
+            <li><a href="signin.html">Sign in</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+        </ul>
+        <!-- <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button> -->
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="section section-left" id="Services">
+        <div class="paras">
+            <p class="sectionTag text-big">Our Services</p>
+            <p class="sectionSubTag text-small">
+                At Interior Dekho, we offer a range of services designed to make your home decor journey smooth and enjoyable. Whether you are looking to showcase your interior designs, find inspiration, or shop for specific items, we have something for everyone.
+            </p>
+        </div>
+        <div class="image-grid">
+            <div class="image-block">
+                <img src="o.jpg" alt="Interior Design Service 1">
+            </div>
+            <div class="image-block">
+                <img src="5.jpg" alt="Interior Design Service 2">
+            </div>
+            <div class="image-block">
+                <img src="4.jpg" alt="Interior Design Service 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Upload & Earn</p>
+            <p class="sectionSubTag text-small">
+                Share your unique interior designs and get paid for every photo that inspires others. Each upload includes a link or location of where the products were bought, making it easier for others to purchase the same items.
+            </p>
+        </div>
+        <div class="thumbnil">
+            <img src="" alt="" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big">Discover & Shop</p>
+            <p class="sectionSubTag text-small">
+                Browse through our extensive collection of user-uploaded interior designs and find inspiration for your own home. Each photo is linked to the products used, allowing you to shop directly from the app.
+            </p>
+        </div>
+        <div class="thumbnil-first">
+            <img src="" alt="" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Personalized Recommendations</p>
+            <p class="sectionSubTag text-small">
+                Get personalized design recommendations based on your preferences and past interactions. Our experts are here to help you create a living space that truly reflects your style.
+            </p>
+        </div>
+        <div class="thumbnil">
+            <img src="" alt="" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big">Community Support</p>
+            <p class="sectionSubTag text-small">
+                Join our vibrant community of interior enthusiasts and professionals. Share ideas, seek advice, and support each other in creating beautiful living spaces.
+            </p>
+        </div>
+        <div class="thumbnil-first">
+            <img src="" alt="" class="imgFluid">
+        </div>
+    </section>
+</body>
+</html>
