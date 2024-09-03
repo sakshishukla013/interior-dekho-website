@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Dekho - Transforming Your Living Space</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f1e7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #8d6e63;
+            font-weight: bold;
+        }
+
+        .rightNav {
+            display: flex;
+        }
+
+        .rightNav input {
+            padding: 5px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .rightNav button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: brown;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .rightNav button:hover {
+            background-color: #8d6e63;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .firstSection {
+            background-image: url(zz.jpg);
+            background-size: cover;
+            background-position: right;
+            background-color: #f8f1e7;
+            padding: 10% 0;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstHalf {
+            max-width: 600px;
+        }
+
+        .text-big {
+            font-size: 2.5rem;
+            color: #8d6e63;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .text-small {
+            font-size: 1rem;
+            color: #6d4c41;
+            margin: 20px 0;
+        }
+
+        .button .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #bcaaa4;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .button .btn:hover {
+            background-color: #8d6e63;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .section-left {
+            background-color: #f8f1e7;
+        }
+
+        .paras {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sectionTag {
+            font-size: 2rem;
+            color: #8d6e63;
+        }
+
+        .sectionSubTag {
+            font-size: 1rem;
+            color: #6d4c41;
+            margin: 20px 0;
+        }
+
+        .thumbnil, .thumbnil-first {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imgFluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .contact {
+            background-color: #f8f1e7;
+            padding: 60px 0;
+        }
+
+        .text-center {
+            text-align: center;
+            color: #8d6e63;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .text-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .btn-dark {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8d6e63;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .image-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .image-block {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+        }
+
+        .image-block:hover {
+            transform: scale(1.05);
+        }
+
+        .image-block img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-block {
+                width: 80%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .logo{
+                width: 1%; /* Set the width as needed */
+                height: 0%; /* Maintain aspect ratio */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class=""><img src="" alt=""></div>
+            <li><a href="frontpagemain.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="upload.html">Upload</a>
+            <li><a href="signin.html">Sign in</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Interior Dekho</p>
+                <p class="text-small">Sajao apne sapno ka ghar</p>
+                <div class="button">
+                    
+                </div>
+            </div>
+            <div class="secondHalf">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Discover the Art of Beautiful Living</p>
+            <p class="sectionSubTag text-small">At Interior Dekho, we believe that every home should be a reflection of your unique style and personality. Our mission is to transform your living space into a haven of elegance, comfort, and sophistication.<br></p>
+        </div>
+        <div class="thumbnil">
+            <img src="photo3 - Copy.webp" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="About">
+        <div class="paras">
+            <p class="sectionTag text-big">Exquisite Home Decor</p>
+            <p class="sectionSubTag text-small">Explore our curated collection of home decor pieces that blend timeless elegance with modern trends. From stunning wall art and cozy throw pillows to chic lighting fixtures and elegant furniture, each item is carefully selected to elevate your home’s aesthetic.</p>
+        </div>
+        <div class="thumbnil-first">
+            <img src="photo4.webp" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="section" id="Services">
+        <div class="paras">
+            <p class="sectionTag text-big">Personalized Interior Design Solutions</p>
+            <p class="sectionSubTag text-small">Our expert interior designers are dedicated to bringing your vision to life. Whether you’re looking to refresh a single room or undertake a complete home makeover, we offer personalized design solutions tailored to your taste and lifestyle.</p>
+        </div>
+        <div class="thumbnil">
+            <img src="photo5.jpeg" alt="laptop image" class="imgFluid">
+        </div>
+    </section><hr>
+    <section class="contact" id="Contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <form action="http://127.0.0.1:5000/contactus" method="POST">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+            <textarea class="text-btn" name="text" id="text" cols="30" rows="10" placeholder="Elaborate Your Concern..."></textarea>
+            <button class="btn-dark" type="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+    <script src="js/resp.js">
+    </script>  
+<footer class="background">
+        <p>&copy; 2024 Interior Selling app. All right Reserved.</p>
+    </footer>
+       
+</body>
+</html>
