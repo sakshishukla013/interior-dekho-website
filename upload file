@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Dekho - Upload Your Interior Design</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f1e7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #8d6e63;
+            font-weight: bold;
+        }
+
+        .rightNav {
+            display: flex;
+        }
+
+        .rightNav input {
+            padding: 5px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .rightNav button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: brown;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .rightNav button:hover {
+            background-color: #8d6e63;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .upload-section {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .upload-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8f1e7;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-container h1 {
+            color: #8d6e63;
+            margin-bottom: 30px;
+        }
+
+        .upload-container input[type="text"],
+        .upload-container input[type="file"],
+        .upload-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .upload-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8d6e63;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .upload-container button:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- form action ="http://127.0.0.1:5000/upload" method="POST">-->
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="" alt="logo"></div>
+            <li><a href="frontpagemain.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="upload-section">
+        <div class="upload-container">
+            <h1>Upload Your Interior Design</h1>
+            <form action="/upload">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="text" name="area" id="area" placeholder="Enter Your Area" required>
+                <input type="text" name="location" id="location" placeholder="Enter Link or Location" required>
+                <input type="file" name="picture" id="picture" accept="image/*" required>
+                <textarea name="details" id="details" cols="30" rows="10" placeholder="Enter Details" required></textarea>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="background">
+        <!-- Footer content can go here -->
+    </footer>
+</body>
+</html>
